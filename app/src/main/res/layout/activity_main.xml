@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/grid_layout"
+        android:paddingLeft="10dp"
+        android:paddingTop="220dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="250dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <Button
+            android:id="@+id/EQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button"
+            android:onClick="showList"
+            android:text="Earthquake"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/VO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button"
+            android:onClick="showList"
+            android:shadowRadius="5"
+            android:text="Volcano"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/DR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button"
+            android:onClick="showList"
+            android:shadowRadius="5"
+            android:text="Drought"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/FL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button"
+            android:onClick="showList"
+            android:shadowRadius="5"
+            android:text="Flood"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/TC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button"
+            android:onClick="showList"
+            android:shadowRadius="5"
+            android:text="Cyclone"
+            android:textSize="16sp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="showMap"
+        android:text="Show On Map"
+        android:textColor="#D7070707"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.506" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

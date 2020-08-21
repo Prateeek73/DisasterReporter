@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Disaster Reporter</string>
+
+    <string name="title_activity_article_activity">article_activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_article">article</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
